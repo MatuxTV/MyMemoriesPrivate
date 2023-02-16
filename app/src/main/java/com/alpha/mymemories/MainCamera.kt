@@ -1,4 +1,5 @@
-package com.alpha.mymemories;
+@file:JvmName("MCamera")
+package com.alpha.mymemories
 
 import android.Manifest
 import android.content.ContentValues
@@ -34,17 +35,20 @@ import com.alpha.mymemories.databinding.CameraBinding
 import java.nio.ByteBuffer
 import java.text.SimpleDateFormat
 import java.util.Locale
+import com.alpha.mymemories.MainActivity
 
 typealias LumaListener = (luma: Double) -> Unit
 
 
-class MainCamera : AppCompatActivity() {
+public class MainCamera : AppCompatActivity() {
 
     private lateinit var viewBinding: CameraBinding
     private var imageCapture: ImageCapture? = null
     private var videoCapture: VideoCapture<Recorder>? = null
     private var recording: Recording? = null
     private lateinit var cameraExecutor: ExecutorService
+
+    val javaObjects = MainActivity();
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -4,9 +4,11 @@
     <string name="app_name">My Memories</string>
     <string name="Profile">Profil</string>
     <string name="Settings">Nastavenia</string>
-    <string name="Welcome">Vitaj</string>
+    <string name="Welcome">Vitaj v My Memories</string>
 
     <string name="take_photo">Odfot</string>
     <string name="start_capture">Zacni nahravat</string>
     <string name="stop_capture">Ukonci nahravanie</string>
+    <string name="back">Späť</string>
+    <string name="saving">Ukladanie</string>
 </resources>
